@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">    
+    
+   <bean class="com.Collection.mavelProject.Employee" name="Emp1">
+   
+   <property name="name" value = "Devid Parahjpati"/>
+   
+   <property name="ids">
+   <list>
+   <value>1231</value>
+   <value>3221</value>
+   <value>423624</value>
+   </list>
+   </property>
+   
+   <property name="address">
+   <set>
+   <value>pune</value>
+   <value>mumbai</value>
+   <value>Nagpuri</value>
+   </set>
+   </property>
+   
+   <property name="courses">
+   <map>
+   <entry key="Java" value="3month"/>
+   <entry key="JDBC" value="1month"/>
+   <entry key="Web Development" value="3month"/>
+   </map>
+   </property>
+   
+   <property name="city">
+   <props>
+   <prop key="shopNo">11</prop>
+   <prop key="shopname">radheKrishan janaral Store</prop>
+   </props>
+   </property>
+   
+   </bean>
+    
+
+</beans>
